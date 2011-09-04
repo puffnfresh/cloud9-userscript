@@ -1,0 +1,14 @@
+<a:application xmlns:a="http://ajax.org/2005/aml">
+    <a:tab id="tabUserScript" skin="docktab" visible="false" activepage="1">
+        <a:page id="dbUserScript" caption="User Script" render="runtime">
+            <a:vbox anchors="0 0 0 0">
+                <a:codeeditor id="txtUserScript" 
+                  flex      = "1"
+                  border    = "0"
+                  onkeyup   = "return require('ext/userscript/userscript').keyupHandler(event)"
+                  showprintmargin   = "false"
+                  printmargincolumn = "0" />
+            </a:vbox>
+        </a:page>
+    </a:tab>
+</a:application>
